@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section -->
+    <section>
+      <header>
+        <div class="logo">
+          <a href="#"><img src="assets/images/logo.svg" alt="" /></a>
+        </div>
+        <!-- =============== -->
+         <div class="units-wrapper">
+        <button class="units-btn" onclick="toggleMenu()">
+          <span class="icon"><img src="assets/images/icon-units.svg" alt=""></span>
+          <span>Units</span>
+          <span><img src="assets/images/icon-dropdown.svg" alt=""></span>
+</button>
+
+<div class="units-menu" id="unitsMenu">
+  <button>Switch to Imperial</button>
+  <p>Temperature</p>
+  <button>Celsius (°C)</button>
+  <button>Fahrenheit (°F)</button>
+
+  <p class="p">Wind Speed</p>
+  <button>km/h</button>
+  <button>mph</button>
+  <p class="p">Precipitation</p>
+  <button>Millimeters (mm)</button>
+  <button> Inches (in)</button>
+</div>
+</div>
+    </section>
+
+    <div class="textLooking">
+      <h1>How's the sky looking today?</h1>
+    </div>
+    <!-- search box-->
+    <div class="searchBar">
+      <div id="searchBox" class="searchBox">
+        <form action="">
+          <img src="assets/images/icon-search.svg" alt="" />
+          <input type="text" placeholder="Search for a place..." />
+        </form>
+      </div>
+      <button type="button" id="searchButtom" class="searchButtom">Search</button>
+    </div>
+    <!-- Body -->
+    <div class="body">
+      <!-- body Weather app -->
+      <div id="begBady" class="begBady">
+        <div class="beg">
+          <h2 id="city" class="city">Herat, Afghanistan</h2>
+          <p>Wednesday, January 14,2026</p>
+          <h1 id="temp" class="temp">20°</h1>
+          <img src="assets/images/icon-sunny.webp" alt="" />
+        </div>
+        <div class="Part1">
+          <!-- Feels Like -->
+          <div id="item1" class="item">
+            <p>Feels Like</p>
+            <h3>18</h3>
+          </div>
+
+          <!-- Humidity -->
+          <div id="item2" class="item">
+            <p>Humidity</p>
+            <h3>46%</h3>
+          </div>
+
+          <!-- Wind -->
+          <div id="item3" class="item">
+            <p>Wind</p>
+            <h3>14 km/h</h3>
+          </div>
+
+          <!--Precipitation -->
+          <div id="item4" class="item">
+            <p>Precipitation</p>
+            <h3>0 in</h3>
+          </div>
+        </div>
+        <h3 class="daily">Daily forecast</h3>
+        <div class="part2">
+          <div class="item1">
+            <p>Sat</p>
+            <img src="assets/images/icon-storm.webp" alt="" />
+            <p>21</p>
+            <p>15</p>
+          </div>
+
+          <div class="item1">
+            <p>Sun</p>
+            <img src="assets/images/icon-snow.webp" alt="" />
+            <p>25</p>
+            <p>16</p>
+          </div>
+
+          <div class="item1">
+            <p>Mon</p>
+            <img src="assets/images/icon-fog.webp" alt="" />
+            <p>24</p>
+            <p>15</p>
+          </div>
+
+          <div class="item1">
+            <p>Tue</p>
+            <img src="assets/images/icon-rain.webp" alt="" />
+            <p>20</p>
+            <p>14</p>
+          </div>
+
+          <div class="item1">
+            <p>Wed</p>
+            <img src="assets/images/icon-sunny.webp" alt="" />
+            <p>21</p>
+            <p>15</p>
+          </div>
+
+          <div class="item1">
+            <p>Fri</p>
+            <img src="assets/images/icon-partly-cloudy.webp" alt="" />
+            <p>25</p>
+            <p>13</p>
+          </div>
+        </div>
+      </div>
+      <!-- Hourly forecast -->
+      <div class="hourlyForecast">
+        <div class="weekdaye">
+          <div class="h4"><h4>Hourly forecast</h4></div>
+          <select name="day" id="day">
+            <option value="">Saturday</option>
+            <option value="">Sunday</option>
+            <option value="">Monday</option>
+            <option value="">Tuesday</option>
+            <option value="">Wednesday</option>
+            <option value="">Thursday</option>
+            <option value="">Friday</option>
+          </select>
+        </div>
+        <div class="hour">
+          <img src="assets/images/icon-overcast.webp " alt="" />
+          <p>12 AM</p>
+          <p>68</p>
+        </div>
+
+        <div class="hour">
+          <img src="assets/images/icon-partly-cloudy.webp" alt="" />
+          <p>1 AM</p>
+          <p>68</p>
+        </div>
+
+        <div class="hour">
+          <img src="assets/images/icon-sunny.webp" alt="" />
+          <p>2 AM</p>
+          <p>68</p>
+        </div>
+
+        <div class="hour">
+          <img src="assets/images/icon-overcast.webp" alt="" />
+          <p>3 AM</p>
+          <p>68</p>
+        </div>
+
+        <div class="hour">
+          <img src="assets/images/icon-snow.webp" alt="" />
+          <p>4 AM</p>
+          <p>68</p>
+        </div>
+
+        <div class="hour">
+          <img src="assets/images/icon-fog.webp" alt="" />
+          <p>5 AM</p>
+          <p>68</p>
+        </div>
+
+        <div class="hour">
+          <img src="assets/images/icon-snow.webp" alt="" />
+          <p>6 AM</p>
+          <p>68</p>
+        </div>
+
+        <div class="hour">
+          <img src="assets/images/icon-overcast.webp" alt="" />
+          <p>7 AM</p>
+          <p>68</p>
+        </div>
+
+        <div class="hour">
+          <img src="assets/images/icon-overcast.webp" alt="" />
+          <p>8 AM</p>
+          <p>68°</p>
+        </div>
+      </div>
+      <!-- </body -->
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

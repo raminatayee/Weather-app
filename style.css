@@ -1,0 +1,490 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"Bricolage Grotesque";
+  
+}
+body{
+    
+      background-color: hsl(243, 96%, 9%);
+    margin: 2% 4% 4% 4%;
+}
+section{
+   width: 99%;
+   height: 100px;
+  
+}
+header{
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+
+}
+/* .units{
+  
+   
+}
+.unitsSelect{
+     width: 100px;
+    height: 35px;
+    background-color:hsl(243, 27%, 20%);
+    border-radius: 5px;
+    color: #fff;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+   
+
+} */
+
+/* ================ */
+.units-wrapper{
+    display: inline-block;
+    position: relative;
+}
+
+.units-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+ background-color:hsl(243, 27%, 20%);
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.units-menu {
+  width: 160px;  
+  display: none;
+  background-color:hsl(243, 27%, 20%);
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-left: -58px;
+  gap: 8px;
+}
+
+.units-menu button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  background: transparent;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 3px;
+  text-align: left;
+  cursor: pointer;
+}
+.units-menu p{
+    color: #bcbaba;
+    font-size: 13px;
+    margin-left: 2px;
+    padding: 8px;
+}
+.units-menu .p{
+    color: #bcbaba;
+    font-size: 13px;
+    margin-left: 2px;
+    border-top: solid 0.2px #bcbaba;
+    padding: 8px;
+}
+.units-menu button:hover {
+ background-color: hsl(243, 23%, 24%);
+ height: 30px;
+ 
+ 
+}
+.show {
+  display: block;
+}
+
+/* ================= */
+
+.textLooking{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+    color: #fff;
+    padding-bottom: 40px;
+    
+}
+.searchBar{
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.searchBox{
+    width: 400px;
+    height: 40px;
+    background-color: hsl(243, 27%, 20%);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --padding:10px;
+}
+.searchBox input{
+    width: 350px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 18px;
+    padding-left: var(--padding);
+}
+.searchBox img{
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    justify-content: center;
+}
+.searchButtom{
+    width: 80px;
+    height: 40px;
+    background-color: blueviolet;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+}
+
+
+/* start body */
+.body{
+    width: 100%;
+    height: 500px;
+    display: flex;
+     margin-top: 30px;
+
+}
+/* begBady */
+.begBady{
+    width: 63%;
+
+}
+.beg{
+    width: 100%;
+    height: 210px;
+    background-image: url(assets/images/bg-today-large.svg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.beg h2{
+    margin-left: 15px;
+    margin-top: 60px;
+    color: #fff;
+}
+.beg p{
+    margin-left:15px;
+    margin-top: 5px;
+    color: #fff;
+}
+.beg h1 {
+    font-size: 100px;
+    color: #fff;
+    margin-left: 70%;
+    margin-top: -80px;
+}
+.beg img{
+    width: 90px;
+    height: 90px;
+    margin: auto;
+    margin-top: -100px;
+    margin-left: 57%;
+}
+
+.begBady .Part1{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    gap: 15px;
+
+}
+.begBady .Part1 .item{
+    width: 25%;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    background-color: hsl(243, 23%, 24%);
+    border: 2px solid hsl(245, 45%, 22%);
+
+
+}
+.begBady .item p{
+    color: #fff;
+    display: flex;
+    margin-left: 14px;
+}
+.begBady .item h3{
+    color: #fff;
+    display: flex;
+    margin-left: 14px;
+    padding-top: 5px;
+}
+
+.begBady .daily{
+    color: #fff;
+    padding-top: 20px;
+}
+.begBady .part2{
+    display: flex;
+    width: 100%;
+    height: 128px;
+    margin-top: 10px;
+    gap: 15px;
+
+}
+.begBady .part2 .item1{
+     width: 16%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(243, 23%, 24%);
+    border: 2px solid hsl(245, 45%, 22%);
+}
+.begBady .part2 .item1 img{
+    width: 40px;
+    height: 40px;
+}
+.begBady .part2 .item1 p{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+/* hourly Forecast */
+.hourlyForecast{
+    width: 35%;
+    background-color: hsl(243, 23%, 24%);
+    margin-left: 25px;
+    border: 3px solid hsl(245, 45%, 22%);
+    border-radius: 10px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   align-items: center;
+}
+.hourlyForecast ::-webkit-scrollbar-thumb{
+    background: red;
+    border:3px solid hsl(243, 23%, 30%) ;
+}
+/* button week daye  */
+.weekdaye{
+    width: 90%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 20px;
+}
+.hourlyForecast .h4{
+    color: #fff;
+    display: flex;
+}
+.weekdaye #day{
+    height: 35px;
+    width: 130px;
+    text-align: center;
+    background-color:  hsl(243, 23%, 30%);
+    border: 2px solid  hsl(248, 36%, 27%);
+    border-radius: 5px;
+    color: #fff;
+    
+    
+}
+.hourlyForecast .button p{
+    padding-left: 8px;
+}
+.hourlyForecast .button img{
+    display: flex;
+
+}
+.hourlyForecast .hour{
+width: 90%;
+height: 50px;
+border-radius:8px ;
+display: flex;
+flex-direction: row;
+background-color: hsl(243, 23%, 30%);
+border: 2px solid hsl(248, 36%, 27%);
+}
+.hourlyForecast .hour p{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+@media (max-width : 500px){
+    .textLooking{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 21px;
+    color: #fff;
+    margin: auto;
+    padding-bottom: 40px; 
+    }
+    .searchBar{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+    .searchBox{
+    width: 300px;
+    height: 40px;
+    background-color: hsl(243, 27%, 20%);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    --padding:10px;
+}
+.searchBox input{
+    width: 250px;
+    height: 40px;
+    border: 0;
+    outline: none;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 18px;
+    padding-left: var(--padding);
+}
+.searchBox img{
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    justify-content: center;
+}
+.searchButtom{
+    width: 300px;
+    height: 40px;
+    background-color: blueviolet;
+    border: 0;
+    border-radius: 8px;
+    color: #fff;
+}
+.begBady{
+    width: 88%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.beg{
+    width: 100%;
+    height: 210px;
+    background-image: url(assets/images/bg-today-small.svg);
+    background-size: cover;
+    background-position:center;
+}
+
+.beg h2{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+   
+}
+.beg p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-size: 12px;
+    margin-top: -10px;
+}
+.beg h1 {
+    font-size: 60px;
+    color: #fff;
+    margin-left: 50%;
+    margin-top: -10px;
+}
+.beg img{
+    width: 90px;
+    height: 90px;
+    display: flex;
+    margin: auto;
+    margin-top: -80px;
+    margin-left: 50px;
+}
+.begBady .Part1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.begBady .Part1 .item{
+    width: 150px;
+    height: 90px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: hsl(243, 23%, 24%);
+    border: 2px solid hsl(245, 45%, 22%);
+}
+.begBady .part2{
+    display: flex;
+    width: 100%;
+    height: 128px;
+    flex-wrap: wrap;
+    /* margin-top: 110px; */
+    gap: 15px;
+
+}
+.begBady .daily{
+    color: #fff;
+    padding-top: 115px;
+}
+.begBady .part2 .item1{
+     width: 30%;
+    height: 100%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(243, 23%, 24%);
+    border: 2px solid hsl(245, 45%, 22%);
+}
+.begBady .part2 .item1 img{
+    width: 40px;
+    height: 40px;
+}
+.begBady .part2 .item1 p{
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+}
+
+.hourlyForecast{
+   display: flex;
+   margin-top: 200px;
+   position: absolute;
+   top: 920px;
+   width: 300px;
+   justify-content: center;
+   align-items: center;
+}
+}
